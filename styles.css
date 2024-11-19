@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', georgia, helvetica;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(145deg, #ffe6cc, #ffdcc2); /* Earth tone background lebih menyala */
+    color: #5c4c40;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: #fff5eb; /* Background kontainer */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #d87c45; /* Warna judul lebih menyala */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #a85d2d; /* Warna subjudul */
+}
+
+/* Photo Slider */
+.photo-slider {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px auto;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.photo-slider .photo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.photo-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.photo-slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #e69558; /* Tombol navigasi lebih menyala */
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.photo-slider .prev {
+    left: -30px;
+}
+
+.photo-slider .next {
+    right: -30px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #ffe8d6; /* Background lebih cerah */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #c76b4a; /* Warna heading lebih menyala */
+    text-transform: uppercase;
+    border-bottom: 2px solid #e69558; /* Border bawah heading */
+    display: inline-block;
+}
+
+/* List Style */
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    padding: 5px 0;
+    color: #5c4c40; /* Warna teks list */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #7f5e4c;
+    background: #ffe6cc;
+    border-radius: 0 0 15px 15px;
+}
